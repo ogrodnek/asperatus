@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java"/>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/default/aws-java-sdk.jar"/>
+	<classpathentry kind="lib" path="lib/default/commons-codec.jar"/>
+	<classpathentry kind="lib" path="lib/default/commons-lang.jar"/>
+	<classpathentry kind="lib" path="lib/default/commons-logging.jar"/>
+	<classpathentry kind="lib" path="lib/default/guava.jar"/>
+	<classpathentry kind="lib" path="lib/default/httpclient.jar"/>
+	<classpathentry kind="lib" path="lib/default/httpcore.jar"/>
+	<classpathentry kind="lib" path="lib/default/jackson-core-asl.jar"/>
+	<classpathentry kind="lib" path="lib/default/mail.jar"/>
+	<classpathentry kind="lib" path="lib/default/stax-api.jar"/>
+	<classpathentry kind="lib" path="lib/default/stax.jar"/>
+	<classpathentry kind="lib" path="lib/test/concurrent-test-utils.jar"/>
+	<classpathentry kind="lib" path="lib/test/junit.jar"/>
+	<classpathentry kind="lib" path="lib/test/mockito-all.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
