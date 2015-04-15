@@ -34,7 +34,7 @@ public final class ThreadSafeRateTracker implements RateTracker {
 
   /** Constructor that uses the system time to track the duration of each reporting period. */
   public ThreadSafeRateTracker() {
-    this(new Stopwatch());
+    this(Stopwatch.createUnstarted());
   }
 
   /** Constructor that allows passing a specific Stopwatch implementation. Intended for testing. */
@@ -63,7 +63,7 @@ public final class ThreadSafeRateTracker implements RateTracker {
     try {
       stopwatch.stop();
 
-      periodLengthSeconds = stopwatch.elapsedTime(SECONDS);
+      periodLengthSeconds = stopwatch.elapsed(SECONDS);
 
       count = counter.getAndSet(0L);
 

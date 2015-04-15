@@ -11,7 +11,7 @@ public final class ThreadSafeRateTrackerTest {
   private static final double TOLERANCE = 0.0000001;
 
   private final SetTimeTicker ticker = new SetTimeTicker();
-  private final ThreadSafeRateTracker rateTracker = new ThreadSafeRateTracker(new Stopwatch(ticker));
+  private final ThreadSafeRateTracker rateTracker = new ThreadSafeRateTracker(Stopwatch.createUnstarted(ticker));
 
   @Test
   public void testOneSecondThenTwoSecondsWithConstantRate() {

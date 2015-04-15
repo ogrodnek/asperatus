@@ -4,6 +4,7 @@ import com.amazonaws.AmazonClientException;
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.AmazonWebServiceRequest;
 import com.amazonaws.ResponseMetadata;
+import com.amazonaws.regions.Region;
 import com.amazonaws.services.cloudwatch.AmazonCloudWatch;
 import com.amazonaws.services.cloudwatch.model.DeleteAlarmsRequest;
 import com.amazonaws.services.cloudwatch.model.DescribeAlarmHistoryRequest;
@@ -131,6 +132,11 @@ public class AbstractCloudwatch implements AmazonCloudWatch {
 
   @Override
   public ResponseMetadata getCachedResponseMetadata(AmazonWebServiceRequest request) {
+    throw new UnsupportedOperationException();
+  }
+
+  @Override
+  public void setRegion(Region region) throws IllegalArgumentException {
     throw new UnsupportedOperationException();
   }
 }
