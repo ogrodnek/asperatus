@@ -34,21 +34,18 @@
   <dependencies>
     <dependency>
       <groupId>com.amazonaws</groupId>
-      <artifactId>aws-java-sdk</artifactId>
-      <version>1.7.0</version>
-      <scope>compile</scope>
+      <artifactId>aws-java-sdk-cloudwatch</artifactId>
+      <version>1.9.0</version>
     </dependency>
     <dependency>
       <groupId>commons-lang</groupId>
       <artifactId>commons-lang</artifactId>
       <version>2.6</version>
-      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
       <version>17.0</version>
-      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
